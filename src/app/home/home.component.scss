@@ -1,6 +1,15 @@
-img {
-    width: 400px;
-    position: absolute;
-    left: calc(50% - 200px);
-    top: 10%;
+:host {
+    display: grid;
+    grid-template-rows: 30vh 70vh;
+    .header-container {
+        display: grid;
+        align-self: center;
+        justify-content: center;
+        img { width: 400px; }
+    }
+    .tokens-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
 }
