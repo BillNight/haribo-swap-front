@@ -1,3 +1,45 @@
 :host {
-    width: 50%;
+    .select-token-container {
+        box-shadow: 0px 0px 15px #eaeaea;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 62px;
+        &.active { height: 324px; }
+    }
+    .selected-token {
+        font-size: 21px;
+        padding: 0px 25px 0px 25px;
+        line-height: 62px;
+        border: 1px solid #efefef;
+        cursor: pointer;
+        width: 230px;
+        background-color: white;
+        border-radius: 10px 10px 0px 0px;
+        
+        i {
+            float: right;
+            margin: 0px 0px 0px 30px;
+            line-height: 48px;
+        }
+    }
+    ul {
+        border: 1px solid #efefef;
+        border-top: 0px;
+        height: 260px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        li {
+            border-bottom: 1px solid #efefef;
+            line-height: 64px;
+            padding: 0px 25px;
+            background-color: white;
+            &:hover {
+                background-color: #f9f9f9;
+                cursor: pointer;
+            }
+            &:last-child {
+                border-bottom: 0px;
+            }
+        }
+    }
 }

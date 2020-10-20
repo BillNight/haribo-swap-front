@@ -1,7 +1,13 @@
+<app-menu></app-menu>
 <div class="header-container">
-    <img src="../../assets/haribo-swap.jpeg">
+    <img src="../../assets/haribo-swap.png">
 </div>
 <div class="tokens-container">
+    <div></div>
     <app-tokens-list [listItems]="tokensList"></app-tokens-list>
+    <div class="swap-icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </div>
     <app-tokens-list [listItems]="tokensList"></app-tokens-list>
+    <div></div>
 </div>

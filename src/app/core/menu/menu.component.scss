@@ -1,0 +1,13 @@
+:host {
+    display: grid;
+    justify-content: center;
+    ul {
+        line-height: 60px;
+        font-size: 14px;
+        li {
+            float: left;
+            margin: 0px 15px;
+            cursor: pointer;
+        }
+    }
+}

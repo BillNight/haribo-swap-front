@@ -1,3 +1,6 @@
-<ul>
-    <li *ngFor="let token of listItems">{{token.name}}</li>
-</ul>
+<div class="select-token-container" [ngClass]="{ active: tokensListState }">
+    <div class="selected-token" (click)="setTokenListState()">{{ selectedToken }}<i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+    <ul>
+        <li *ngFor="let token of listItems" (click)="selectToken(token)">{{token.name}}</li>
+    </ul>
+</div>

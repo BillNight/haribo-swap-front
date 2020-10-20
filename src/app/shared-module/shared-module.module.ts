@@ -3,7 +3,7 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // MODULES
-import { MenuModule } from './menu/menu.module';
+import { MenuModule } from '../core/menu/menu.module';
 
 @NgModule({
   declarations: [],

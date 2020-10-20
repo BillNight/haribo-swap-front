@@ -1,6 +1,6 @@
 :host {
     display: grid;
-    grid-template-rows: 30vh 70vh;
+    grid-template-rows: 50px 30vh calc(70vh - 50px);
     .header-container {
         display: grid;
         align-self: center;
@@ -9,7 +9,14 @@
     }
     .tokens-container {
         display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
+        grid-template-columns: 23% 25% 4% 25% 23%;
+        justify-items: center;
+        .swap-icon {
+            line-height: 62px;
+            font-size: 38px;
+            color: #585858;
+            position: relative;
+            left: 6px;
+        }
     }
 }
